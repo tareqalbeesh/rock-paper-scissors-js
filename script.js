@@ -19,17 +19,14 @@ let computerScore = 0
 const CHOICES = ["ROCK", "PAPER", "SCISSOR"]
 
 function rockSelected() {
-    alert("you clicked on rock bruv");
     playRound(CHOICES[0], computersPick())
 }
 
 function paperSelected() {
-    alert("you clicked on paper bruv");
     playRound(CHOICES[1], computersPick())
 
 }
 function scissorSelected() {
-    alert("you clicked on scissor bruv");
     playRound(CHOICES[2], computersPick())
 
 }
@@ -69,7 +66,7 @@ function whoWins(select1, select2) {
     }
 }
 function playRound(playerValue, computersPickValue) {
-    alert(playerValue + " " + computersPickValue)
+    // alert(playerValue + " " + computersPickValue)
     if (round == 0) {
         computerScoreElement.innerHTML = computerScore;
         playerScoreElement.innerHTML = playerScore;
@@ -104,7 +101,7 @@ function playRound(playerValue, computersPickValue) {
         computerScore = 0
 
 
-        alert("The Game Has Ended!")
+        // alert("The Game Has Ended!")
         roundElement.innerHTML = ""
         return;
     }
